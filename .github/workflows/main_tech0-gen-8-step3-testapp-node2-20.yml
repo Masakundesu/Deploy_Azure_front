@@ -28,7 +28,7 @@ jobs:
           npm run test --if-present
 
       - name: Copy artifact for deployment job
-        run:
+        run: |
           mkdir deploy
           cp -r ./.next/standalone/. ./deploy
           cp -r ./public ./deploy
